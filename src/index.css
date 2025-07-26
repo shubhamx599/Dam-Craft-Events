@@ -1,0 +1,97 @@
+@import "tailwindcss";
+*{
+    font-family: "Helvetica", "Lucida Sans", Tahoma, sans-serif;
+}
+::selection{
+    color: rgb(255, 255, 255);
+    background-color: rgb(0, 0, 0);
+
+}
+body{
+    margin: 0;
+    padding: 0;
+    /* background-color: #E5E9EB; */
+}
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee {
+  animation: marquee 10s linear infinite;
+}
+
+
+
+
+.small{
+    font-size: clamp(0.75rem, 1vw, 1rem);
+}
+.medium{
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    
+}
+.normal{
+  font-size: clamp(1.3rem, 2.5vw, 2rem);
+
+}
+.mmedium{
+    font-size: clamp(2rem, 4vw, 3rem);
+    
+}
+
+.mlarge{
+    font-size: clamp(1.8rem, 7vw, 5rem);
+
+}
+.large{
+    font-size: clamp(3rem, 8vw, 8rem);
+}
+.icon {
+  display: inline-block;
+  margin-right: 0.3rem;
+}
+.reel {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.stroke {
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    color: transparent;
+    font-weight: 500;
+  }
+
+  html,
+body {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+@keyframes dropMove {
+          0% { transform: translateY(-10px); opacity: 0; }
+          50% { transform: translateY(10px); opacity: 1; }
+          100% { transform: translateY(-10px); opacity: 0; }
+        }
+
+        /* For 3D Flip Effect */
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+  will-change: transform; 
+
+}
