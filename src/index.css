@@ -1,6 +1,6 @@
 @import "tailwindcss";
 *{
-    font-family: "Helvetica", "Lucida Sans", Tahoma, sans-serif;
+    font-family: "Poppins","Helvetica", "Lucida Sans", Tahoma, sans-serif;
 }
 ::selection{
     color: rgb(255, 255, 255);
